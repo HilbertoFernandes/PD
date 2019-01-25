@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cliente</title>
+
+</head>
+
+<script type="text/javascript">
+	function conectar() {
+		conexao = new WebSocket('ws://localhost:8080/ExemploWebSocket/chat/eu');
+		document.write('Estado :',conexao.readyState);
+		document.write("<button type='button' onclick='desconectar()'>Desconectar</button>");
+	}
+
+	function desconectar() {
+		conexao.close();
+		document.write('Estado :',conexao.readyState);
+	}
+
+	conexao.onopen = function() {
+		alert('Conectou');
+	}
+</script>
+
+<body>
+	<button type="button" onclick="conectar()">Conectar</button>
+</body>
+</html>
