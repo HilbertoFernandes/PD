@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Programação Distribuida - Operadora</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="lib/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/mp2.js"></script>
+</head>
+<body>
+	<div id="content" style="width: 60%; margin-left: 18%; margin-top: 3%">
+		<fieldset style="width: 96%">
+			<legend>Operadora</legend>
+			<label id="seuNumero">Seu número</label> <input id="cliente"
+				onkeyup="somenteNumeros(this);"> <input id="url"
+				value="ws://localhost:8080/Operadora/operadora/" type="hidden">
+			<input id="serverUrl" type="hidden">
+			<button id="connectButton" onclick="concatenarCliente();">Conectar</button>
+			<label>Status:</label> <span id="connectionStatus">DESCONECTADO</span>
+
+			<div id="requestArea2" hidden="true" style="width: 100%">
+				<button id="disconnectButton">Desconectar</button>
+				<button onclick="inserirCredito()">Inserir Créditos</button>
+				<button onclick="verSaldo()">Solicitar Saldo</button>
+			</div>
+		</fieldset>
+		<fieldset id="requestArea" hidden="true" style="width: 96%">
+			<legend id="lbRequestArea1">Enviar Mensagem</legend>
+			<legend id="lbRequestArea2" hidden="true">Créditos / Saldo</legend>
+			<span id="numMensg">Número de destino</span> <span id="valCred"
+				hidden="true">Valor</span> <span id="numSaldo" hidden="true">Solicitar
+				Saldo ? </span> <input id="numeroDestino" onkeyup="somenteNumeros(this);">
+			<span id="msg">Mensagem</span> <input id="mensagem"> <input
+				id="sendMessage" type="hidden">
+			<button id="sendButton" onclick="concatenar()">Enviar</button>
+			<button id="btCancelarCredito" onclick="cancelarCredito()"
+				hidden="true">Voltar</button>
+			<button id="btCancelarSaldo" onclick="cancelarSaldo()" hidden="true">Cancelar</button>
+		</fieldset>
+
+		<fieldset id="messageArea" style="width: 95%">
+			<legend>
+				Messagens
+				<button id="clearMessage">Limpar</button>
+			</legend>
+			<div id="messages" style="width: 100%"></div>
+		</fieldset>
+	</div>
+</body>
+</html>
