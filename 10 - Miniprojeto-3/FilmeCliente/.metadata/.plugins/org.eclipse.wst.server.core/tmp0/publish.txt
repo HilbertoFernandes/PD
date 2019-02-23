@@ -1,0 +1,3 @@
+#PHP Server publish data
+#Thu Jan 24 14:57:50 GMT-03:00 2019
+org.eclipse.php.builtin.server.core.moduleFactory\:FilmeCliente=C\:\\Users\\Hilberto\\Documents\\Hilberto\\Faculdades\\IFPB\\IFPB 2018.2\\PD\\Workspaces\\9 - Miniprojeto-3\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\htdocs\\FilmeCliente
