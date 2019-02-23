@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Server>
+	<Port name="HTTP/1.1" protocol="HTTP">80</Port>
+<PathMapping local="/BlogClienteRESTfulPHP" module="BlogClienteRESTfulPHP" remote="C:\Users\Hilberto\Documents\Hilberto\Faculdades\IFPB\IFPB 2018.2\PD\Workspaces\11 - Miniprojeto-4\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\htdocs\BlogClienteRESTfulPHP"/></Server>
